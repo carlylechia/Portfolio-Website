@@ -1,8 +1,15 @@
-import React from 'react'
+import {AiOutlineHome} from 'react-icons/ai'
+import './nav.css';
 
 const Nav = () => {
   return (
-    <div>Nav</div>
+    <nav>
+      <a href="#"><AiOutlineHome /></a>
+      <a href=""></a>
+      <a href=""></a>
+      <a href=""></a>
+      <a href=""></a>
+    </nav>
   )
 }
 
