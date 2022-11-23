@@ -1,1 +1,74 @@
 /* Styling for the services section */
+.services__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.service {
+  background: var(--color-bg-variant);
+  height: fit-content;
+  border-radius: 0 0 2rem 2rem;
+  border: 3px solid var(--color-primary);
+  transition: var(--transition);
+}
+
+.service:hover {
+  cursor: default;
+  background: transparent;
+  border: 3px solid var(--color-primary-variant);
+}
+
+.service__head {
+  background: var(--color-primary);
+  border-radius: 0 0 2rem 2rem;
+  padding: 2rem;
+  box-shadow: 0 1rem 1rem var(--color-bg-variant);
+  text-align: center;
+}
+
+.service__head h3 {
+  font-size: 1rem;
+  color: var(--color-bg);
+}
+
+.service__list {
+  padding: 2rem;
+}
+
+.service__list li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.service__list-icon {
+  color: var(--color-primary);
+  margin-top: 2px;
+}
+
+.service__list p {
+  font-size: 0.9rem;
+}
+
+/* ========== MEDIA QUERIES FOR MEDIUM DEVICES (TABLET) ========== */
+
+@media screen and (max-width: 1024px) {
+  .services__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .service {
+    height: auto;
+  }
+}
+
+/* ========== MEDIA QUERIES FOR SMALL DEVICES (PHONE) ========== */
+
+@media screen and (max-width: 600px) {
+  .services__container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
