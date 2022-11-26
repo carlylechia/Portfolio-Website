@@ -46,7 +46,7 @@ const projects = [
   {
     id: 6,
     image: IMG6,
-    title: 'Hotel Reservation App',
+    title: 'Space Travellers\' Hub',
     github: 'https://github.com/carlylechia/SPACE-TRAVELERS-HUB',
     demo: 'https://6262b54ee8f3d52d5200c258--tiny-bavarois-1b6015.netlify.app/',
   },
