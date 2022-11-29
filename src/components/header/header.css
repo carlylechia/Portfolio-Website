@@ -1,0 +1,78 @@
+/* Styling for the header section */
+
+header {
+  height: 100vh;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+
+.header__container {
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.me img {
+  max-width: 400px;
+  border-radius: 12rem 12rem 0 0;
+  max-height: 400px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.me .scroll__down {
+  position: absolute;
+  right: -3rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+
+/* ========== CTA ========== */
+
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* ========== Social Handles ========== */
+
+.social__handles {
+  display:  flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+}
+
+.social__handles::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary);
+}
+
+/* ========== MEDIA QUERY (MEDIUM DEVICES) ========== */
+
+@media screen and (max-width: 1024px) {
+  header{
+    height: 68vh;  
+  }  
+}
+
+/* ========== MEDIA QUERY (SMALL DEVICES) ========== */
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+
+  .social__handles, .scroll__down {
+    display: none;
+  }
+}
