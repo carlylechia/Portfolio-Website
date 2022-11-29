@@ -1,1 +1,65 @@
 /* Styling for the footer secrion */
+footer {
+  background: rgba(40, 39, 39, 0.64);
+  backdrop-filter: blur(15px);
+  margin-top: 7rem;
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.footer__logo {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.permalinks {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto 3rem;
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.footer__socials a {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  display: flex;
+  border: 1px solid transparent;
+}
+
+.footer__socials a:hover {
+  background: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.footer__copyright {
+  margin-bottom: 4rem;
+  color: var(--color-primary);
+}
+
+/* ========== MEDIA QUERIES FOR SMALL DEVICES (PHONE) ========== */
+
+@media screen and (max-width: 600px) {
+  .permalinks {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer__socials {
+    margin-bottom: 2.6rem;
+  }
+}
