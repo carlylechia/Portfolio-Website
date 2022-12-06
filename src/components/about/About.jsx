@@ -36,7 +36,7 @@ const About = () => {
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla illo voluptatibus voluptatem harum quos, voluptates maiores ipsam praesentium aspernatur dolorum, quia beatae quaerat a accusamus omnis quod dolorem unde magnam.
+          Hello, my name is Chia Carlyle, and I am a web developer who tries to make the “global village” a better place by developing web applications using JavaScript, React, Ruby, and Rails, which go a long way to making human lives more accessible and worthwhile.
           </p>
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
         </div>
