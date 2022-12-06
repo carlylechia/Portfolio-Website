@@ -51,6 +51,14 @@
   font-size: 0.9rem;
 }
 
+.no-show {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 /* ========== MEDIA QUERIES FOR MEDIUM DEVICES (TABLET) ========== */
 
 @media screen and (max-width: 1024px) {
