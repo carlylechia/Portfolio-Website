@@ -16,8 +16,8 @@ const Nav = () => {
     <nav>
       <a href="#home" className={scrollPosition <= 750 ? 'active' : ''} onClick={() => setActiveNav('#home')}><AiOutlineHome /></a>
       <a href="#about" className={scrollPosition <= 1444 && scrollPosition > 750 ? 'active' : ''} onClick={() => setActiveNav('#about')}><BiUser/></a>
-      <a href="#experience" className={scrollPosition <= 2034 && scrollPosition > 1442 ? 'active' : ''} onClick={() => setActiveNav('#experience')}><BiBook/></a>
-      <a href="#services" className={scrollPosition <= 4446 && scrollPosition > 2034 ? 'active' : ''} onClick={() => setActiveNav('#services')}><RiServiceLine/></a>
+      <a href="#experience" className={scrollPosition <= 2034 && scrollPosition > 1444 ? 'active' : ''} onClick={() => setActiveNav('#experience')}><BiBook/></a>
+      <a href="#services" className={scrollPosition <= 4446 && scrollPosition > 2039 ? 'active' : ''} onClick={() => setActiveNav('#services')}><RiServiceLine/></a>
       <a href="#contact" className={scrollPosition > 4446 ? 'active' : ''} onClick={() => setActiveNav('#contact')}><BiMessageSquareDetail/></a>
     </nav>
   )
