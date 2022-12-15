@@ -8,6 +8,10 @@ import Footer from './components/footer/Footer';
 import Services from './components/services/Services';
 import Portfolio from './components/portfolio/Portfolio';
 import Testimonials from './components/testimonials/Testimonials';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_CODE);
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const App = () => {
   return (

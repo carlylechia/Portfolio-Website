@@ -6,6 +6,7 @@ import IMG3 from '../../assets/movies.png';
 import IMG4 from '../../assets/vsb.png';
 import IMG5 from '../../assets/budget.png';
 import IMG6 from '../../assets/rockets.png';
+import useGAEventsTracker from '../../hooks/useGAEventsTracker';
 
 const projects = [
   {
@@ -54,6 +55,7 @@ const projects = [
 
 
 const Portfolio = () => {
+  const GAEventsTracker = useGAEventsTracker('Project Visited.');
   return (
     <section id='portfolio'>
       <h5>My Recent Work</h5>
@@ -68,8 +70,8 @@ const Portfolio = () => {
           </div>
           <h3>{title}</h3>
           <div className="portfolio__item-cta">
-            <a href={github} className="btn" target='_blank' rel="noreferrer">Github</a>
-            <a href={demo} className="btn btn-primary" target='_blank' rel="noreferrer">Live Demo</a>
+            <a href={github} className="btn" target='_blank' rel="noreferrer" onClick={e => GAEventsTracker('Project repository visited', github)}>Github</a>
+            <a href={demo} className="btn btn-primary" target='_blank' rel="noreferrer" onClick={e => GAEventsTracker('project website visited', demo)}>Live Demo</a>
           </div>
         </article>
             )
