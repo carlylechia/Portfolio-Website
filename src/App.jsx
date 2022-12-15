@@ -10,7 +10,8 @@ import Portfolio from './components/portfolio/Portfolio';
 import Testimonials from './components/testimonials/Testimonials';
 import ReactGA from 'react-ga';
 
-ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_CODE);
+// ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_CODE);
+ReactGA.initialize('UA-217933430-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 const App = () => {
