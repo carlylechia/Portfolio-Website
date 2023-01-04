@@ -16,7 +16,7 @@ ReactGA.pageview(window.location.pathname + window.location.search);
 
 const App = () => {
   return (
-    <div>
+    <div className='App'>
       <Header />
       <Nav />
       <About />
